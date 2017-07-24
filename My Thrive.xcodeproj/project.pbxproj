@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DF1B5274FB2F2F1B8B028EC /* Pods_My_Thrive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 273A3913AC4EAA8E745A41C1 /* Pods_My_Thrive.framework */; };
+		5E737B94601E8260FFBBC700 /* Pods_My_ThriveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D9B36A71E8829C19CE7251 /* Pods_My_ThriveUITests.framework */; };
 		9F0C54EB1F24F7E5003A12E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C54EA1F24F7E5003A12E4 /* AppDelegate.swift */; };
 		9F0C54F31F24F7E5003A12E4 /* My_Thrive.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C54F11F24F7E5003A12E4 /* My_Thrive.xcdatamodeld */; };
 		9F0C54F51F24F7E5003A12E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C54F41F24F7E5003A12E4 /* Assets.xcassets */; };
@@ -22,6 +24,10 @@
 		9F41BC101F252A900030D07A /* EventTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41BC0F1F252A900030D07A /* EventTableSource.swift */; };
 		9F5827711F2656020045A6CF /* THApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827701F2656020045A6CF /* THApi.swift */; };
 		9F5827731F2656C00045A6CF /* THRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827721F2656C00045A6CF /* THRequest.swift */; };
+		9F5827761F265FEB0045A6CF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827751F265FEB0045A6CF /* Event.swift */; };
+		9F5827791F2660240045A6CF /* GetEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827781F2660240045A6CF /* GetEventResponse.swift */; };
+		9F58277B1F266EAA0045A6CF /* THJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58277A1F266EAA0045A6CF /* THJsonParser.swift */; };
+		9F58277D1F266F030045A6CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58277C1F266F030045A6CF /* User.swift */; };
 		9FD6B4B11F264FF600700499 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B01F264FF600700499 /* Utils.swift */; };
 		9FD6B4B31F26504A00700499 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B21F26504A00700499 /* Colors.swift */; };
 		9FD6B4B61F2650F100700499 /* bemetest.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B51F2650F100700499 /* bemetest.json */; };
@@ -29,6 +35,7 @@
 		9FD6B4BA1F26513300700499 /* THDateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B81F26513300700499 /* THDateCell.xib */; };
 		9FFB28711F25265C005C19F8 /* THEventCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFB286F1F25265C005C19F8 /* THEventCellTableViewCell.swift */; };
 		9FFB28721F25265C005C19F8 /* THEventCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFB28701F25265C005C19F8 /* THEventCellTableViewCell.xib */; };
+		FC372E7B8449462A1B98C593 /* Pods_My_ThriveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2506E9DDAAFF80A7421490EB /* Pods_My_ThriveTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2506E9DDAAFF80A7421490EB /* Pods_My_ThriveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_ThriveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		273A3913AC4EAA8E745A41C1 /* Pods_My_Thrive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Thrive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B31CA701FB7651060F34EE /* Pods-My Thrive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Thrive.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Thrive/Pods-My Thrive.release.xcconfig"; sourceTree = "<group>"; };
+		69D9B36A71E8829C19CE7251 /* Pods_My_ThriveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_ThriveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9479D20F3EA338F18467AAD8 /* Pods-My ThriveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My ThriveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-My ThriveTests/Pods-My ThriveTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F0C54E71F24F7E5003A12E4 /* My Thrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Thrive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F0C54EA1F24F7E5003A12E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F0C54F21F24F7E5003A12E4 /* My_Thrive.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Thrive.xcdatamodel; sourceTree = "<group>"; };
@@ -70,6 +82,10 @@
 		9F41BC0F1F252A900030D07A /* EventTableSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableSource.swift; sourceTree = "<group>"; };
 		9F5827701F2656020045A6CF /* THApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THApi.swift; sourceTree = "<group>"; };
 		9F5827721F2656C00045A6CF /* THRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THRequest.swift; sourceTree = "<group>"; };
+		9F5827751F265FEB0045A6CF /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		9F5827781F2660240045A6CF /* GetEventResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEventResponse.swift; sourceTree = "<group>"; };
+		9F58277A1F266EAA0045A6CF /* THJsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THJsonParser.swift; sourceTree = "<group>"; };
+		9F58277C1F266F030045A6CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9FD6B4B01F264FF600700499 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9FD6B4B21F26504A00700499 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9FD6B4B51F2650F100700499 /* bemetest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bemetest.json; sourceTree = "<group>"; };
@@ -77,6 +93,10 @@
 		9FD6B4B81F26513300700499 /* THDateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THDateCell.xib; sourceTree = "<group>"; };
 		9FFB286F1F25265C005C19F8 /* THEventCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THEventCellTableViewCell.swift; sourceTree = "<group>"; };
 		9FFB28701F25265C005C19F8 /* THEventCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THEventCellTableViewCell.xib; sourceTree = "<group>"; };
+		AE2D0354CCED175164C4C21E /* Pods-My ThriveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My ThriveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My ThriveTests/Pods-My ThriveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B4D01D837E269D7BB14A1F0A /* Pods-My Thrive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Thrive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Thrive/Pods-My Thrive.debug.xcconfig"; sourceTree = "<group>"; };
+		D364E09709E6C7E47541A131 /* Pods-My ThriveUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My ThriveUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-My ThriveUITests/Pods-My ThriveUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EA103FD5526D8F9A3BE91302 /* Pods-My ThriveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My ThriveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My ThriveUITests/Pods-My ThriveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF1B5274FB2F2F1B8B028EC /* Pods_My_Thrive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC372E7B8449462A1B98C593 /* Pods_My_ThriveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +120,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E737B94601E8260FFBBC700 /* Pods_My_ThriveUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EB17F73D6BAC7365EA4CE57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4D01D837E269D7BB14A1F0A /* Pods-My Thrive.debug.xcconfig */,
+				63B31CA701FB7651060F34EE /* Pods-My Thrive.release.xcconfig */,
+				AE2D0354CCED175164C4C21E /* Pods-My ThriveTests.debug.xcconfig */,
+				9479D20F3EA338F18467AAD8 /* Pods-My ThriveTests.release.xcconfig */,
+				EA103FD5526D8F9A3BE91302 /* Pods-My ThriveUITests.debug.xcconfig */,
+				D364E09709E6C7E47541A131 /* Pods-My ThriveUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4F9C7A13D3F34CEE1945FE31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				273A3913AC4EAA8E745A41C1 /* Pods_My_Thrive.framework */,
+				2506E9DDAAFF80A7421490EB /* Pods_My_ThriveTests.framework */,
+				69D9B36A71E8829C19CE7251 /* Pods_My_ThriveUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F0C54DE1F24F7E5003A12E4 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +157,8 @@
 				9F0C55011F24F7E6003A12E4 /* My ThriveTests */,
 				9F0C550C1F24F7E6003A12E4 /* My ThriveUITests */,
 				9F0C54E81F24F7E5003A12E4 /* Products */,
+				1EB17F73D6BAC7365EA4CE57 /* Pods */,
+				4F9C7A13D3F34CEE1945FE31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +175,8 @@
 		9F0C54E91F24F7E5003A12E4 /* My Thrive */ = {
 			isa = PBXGroup;
 			children = (
+				9F5827771F2660130045A6CF /* Response */,
+				9F5827741F265FD50045A6CF /* Models */,
 				9FD6B4B41F2650E600700499 /* SupportFiles */,
 				9F41BC0E1F252A590030D07A /* TableSources */,
 				9F0C55271F2503AA003A12E4 /* Utils */,
@@ -206,6 +256,7 @@
 				9FD6B4B21F26504A00700499 /* Colors.swift */,
 				9F5827701F2656020045A6CF /* THApi.swift */,
 				9F5827721F2656C00045A6CF /* THRequest.swift */,
+				9F58277A1F266EAA0045A6CF /* THJsonParser.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -216,6 +267,23 @@
 				9F41BC0F1F252A900030D07A /* EventTableSource.swift */,
 			);
 			name = TableSources;
+			sourceTree = "<group>";
+		};
+		9F5827741F265FD50045A6CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F5827751F265FEB0045A6CF /* Event.swift */,
+				9F58277C1F266F030045A6CF /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9F5827771F2660130045A6CF /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				9F5827781F2660240045A6CF /* GetEventResponse.swift */,
+			);
+			name = Response;
 			sourceTree = "<group>";
 		};
 		9FD6B4B41F2650E600700499 /* SupportFiles */ = {
@@ -233,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F0C55121F24F7E6003A12E4 /* Build configuration list for PBXNativeTarget "My Thrive" */;
 			buildPhases = (
+				C7D30D0DB66104ED7D6ADCB0 /* [CP] Check Pods Manifest.lock */,
 				9F0C54E31F24F7E5003A12E4 /* Sources */,
 				9F0C54E41F24F7E5003A12E4 /* Frameworks */,
 				9F0C54E51F24F7E5003A12E4 /* Resources */,
+				ECB7B15F4AE6C587C6AE4A51 /* [CP] Embed Pods Frameworks */,
+				8C5C9229A29C9DDBA6763380 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F0C55151F24F7E6003A12E4 /* Build configuration list for PBXNativeTarget "My ThriveTests" */;
 			buildPhases = (
+				09E1DF40AF465F82E5321B14 /* [CP] Check Pods Manifest.lock */,
 				9F0C54FA1F24F7E6003A12E4 /* Sources */,
 				9F0C54FB1F24F7E6003A12E4 /* Frameworks */,
 				9F0C54FC1F24F7E6003A12E4 /* Resources */,
+				24C15167489134D50652C793 /* [CP] Embed Pods Frameworks */,
+				AD3DC8705B7A4F2E18191062 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,9 +342,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F0C55181F24F7E6003A12E4 /* Build configuration list for PBXNativeTarget "My ThriveUITests" */;
 			buildPhases = (
+				9CDBCBBBB9F4E8E62874506C /* [CP] Check Pods Manifest.lock */,
 				9F0C55051F24F7E6003A12E4 /* Sources */,
 				9F0C55061F24F7E6003A12E4 /* Frameworks */,
 				9F0C55071F24F7E6003A12E4 /* Resources */,
+				F92E7D01A0C363EDB8A7C76D /* [CP] Embed Pods Frameworks */,
+				F023E10E3BA7AFACB2B39CCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -362,23 +439,165 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09E1DF40AF465F82E5321B14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		24C15167489134D50652C793 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My ThriveTests/Pods-My ThriveTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C5C9229A29C9DDBA6763380 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Thrive/Pods-My Thrive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CDBCBBBB9F4E8E62874506C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD3DC8705B7A4F2E18191062 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My ThriveTests/Pods-My ThriveTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7D30D0DB66104ED7D6ADCB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECB7B15F4AE6C587C6AE4A51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Thrive/Pods-My Thrive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F023E10E3BA7AFACB2B39CCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My ThriveUITests/Pods-My ThriveUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F92E7D01A0C363EDB8A7C76D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My ThriveUITests/Pods-My ThriveUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F0C54E31F24F7E5003A12E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F58277B1F266EAA0045A6CF /* THJsonParser.swift in Sources */,
 				9F5827711F2656020045A6CF /* THApi.swift in Sources */,
 				9F0C55291F2503C9003A12E4 /* Constants.swift in Sources */,
 				9FD6B4B91F26513300700499 /* THDateCell.swift in Sources */,
 				9FD6B4B31F26504A00700499 /* Colors.swift in Sources */,
 				9F0C54F31F24F7E5003A12E4 /* My_Thrive.xcdatamodeld in Sources */,
 				9FD6B4B11F264FF600700499 /* Utils.swift in Sources */,
+				9F58277D1F266F030045A6CF /* User.swift in Sources */,
 				9F5827731F2656C00045A6CF /* THRequest.swift in Sources */,
 				9F0C551E1F24F8D8003A12E4 /* MainController.swift in Sources */,
 				9FFB28711F25265C005C19F8 /* THEventCellTableViewCell.swift in Sources */,
 				9F41BC101F252A900030D07A /* EventTableSource.swift in Sources */,
 				9F0C55221F24FF40003A12E4 /* THTableHeaderView.swift in Sources */,
 				9F0C54EB1F24F7E5003A12E4 /* AppDelegate.swift in Sources */,
+				9F5827761F265FEB0045A6CF /* Event.swift in Sources */,
+				9F5827791F2660240045A6CF /* GetEventResponse.swift in Sources */,
 				9F0C552B1F250BB2003A12E4 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +742,7 @@
 		};
 		9F0C55131F24F7E6003A12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D01D837E269D7BB14A1F0A /* Pods-My Thrive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LQTS4P3TYP;
@@ -537,6 +757,7 @@
 		};
 		9F0C55141F24F7E6003A12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B31CA701FB7651060F34EE /* Pods-My Thrive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LQTS4P3TYP;
@@ -551,6 +772,7 @@
 		};
 		9F0C55161F24F7E6003A12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2D0354CCED175164C4C21E /* Pods-My ThriveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -566,6 +788,7 @@
 		};
 		9F0C55171F24F7E6003A12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9479D20F3EA338F18467AAD8 /* Pods-My ThriveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -581,6 +804,7 @@
 		};
 		9F0C55191F24F7E6003A12E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA103FD5526D8F9A3BE91302 /* Pods-My ThriveUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LQTS4P3TYP;
@@ -595,6 +819,7 @@
 		};
 		9F0C551A1F24F7E6003A12E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D364E09709E6C7E47541A131 /* Pods-My ThriveUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LQTS4P3TYP;

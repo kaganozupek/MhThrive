@@ -9,7 +9,7 @@
 import UIKit
 
 
-class MainController: BaseViewController {
+class MainController: BaseViewController,GetEventDelegate {
     
     @IBOutlet weak var tblEvents: UITableView!
     
@@ -55,13 +55,8 @@ class MainController: BaseViewController {
     func loadEvents()
     {
         setPageState(pageState: .LOADING)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { 
-            
-            self.setPageState(pageState: .DONE);
-            self.showEvents()
-            
-            
-        }
+        let api : THApi = THApi()
+        api.getEvents(viewController: self, delegate: self)
     }
     func showEvents()
     {
@@ -74,6 +69,16 @@ class MainController: BaseViewController {
     
     override func viewsForStateChange() -> [UIView]! {
         return [tblEvents]
+    }
+    
+    
+    func getEventsSuccess(response: GetEventResponse) {
+        setPageState(pageState: .DONE)
+        self.showEvents()
+    }
+    
+    func getEventFailed(errorCode: Int) {
+        setPageState(pageState: .DONE)
     }
     
 }

@@ -1,0 +1,6 @@
+framework module Pods_My_Thrive {
+  umbrella header "Pods-My Thrive-umbrella.h"
+
+  export *
+  module * { export * }
+}

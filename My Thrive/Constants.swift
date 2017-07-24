@@ -22,11 +22,21 @@ class Constants: NSObject {
     
     
     //URLS
-    static let urlGetEvents = "/api/v3/events/"
+    static let urlGetEvents : String = "/api/v3/events/"
     
     
     
     
     //Test Variables
-    static let testVariableDummyResponseTime : Double!  = 3
+    static let testVariableDummyResponseTime : Double  = 3
+    static let testVariableHttpStatusCode : Int = 200
+    static let tesetVariableErrorCode = apiErrorCodeSuccess
+    
+  
+    //API Error Codes
+    static let apiErrorCodeSuccess = 0
+    static let apiErrorCodeInternalError = 1
+    static let apiErrorCodeUnknown = 2
+    static let apiErrorCodeUnspecified = -1
+    
 }
