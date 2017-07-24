@@ -10,6 +10,7 @@ import UIKit
 
 class THDateCell: UITableViewCell {
 
+    @IBOutlet weak var lblDate: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

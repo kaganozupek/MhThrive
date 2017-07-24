@@ -16,34 +16,48 @@ class EventTableSource: NSObject,UITableViewDelegate,UITableViewDataSource {
     }
     
     
-    
+    var datasource : [Any]!
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell : UITableViewCell;
+       
         if(getCellType(index: indexPath) == CellType.EVENT)
         {
-            
-            cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifierEventCell) as! THEventCellTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifierEventCell) as! THEventCellTableViewCell
             cell.backgroundColor = UIColor.clear
+            cell.selectionStyle = .none
+
+            let event : Event = datasource[indexPath.row] as! Event
+            cell.lblEventName.text = event.desc as String
+            cell.lblEventOwner.text = String("with \(event.event_owner.user_name!)")
+            cell.lblTime.text = Utils.sharedInstance.getEventTimeIntervalText(event: event)
+            return cell
+
             
         }else
         {
-            cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifierDateCell) as! THDateCell
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifierDateCell) as! THDateCell
             cell.backgroundColor = UIColor.clear
+            cell.selectionStyle = .none
+            
+            
+            let date : Date = datasource[indexPath.row] as! Date
+            cell.lblDate.text = Utils.sharedInstance.convertDateToLocalizedText(date: date)
+            return cell
         }
         
-        cell.selectionStyle = .none
-        return cell
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return datasource.count
     }
     
     func getCellType(index : IndexPath) -> CellType
     {
-        if index.row % 4 == 0{
+        let data = self.datasource[index.row]
+        if data is Date{
             return CellType.DATE
         }
         else{

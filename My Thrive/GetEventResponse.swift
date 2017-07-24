@@ -7,7 +7,20 @@
 //
 
 import UIKit
+import ObjectMapper
 
-class GetEventResponse: NSObject {
+class GetEventResponse: NSObject,Mappable {
+    var user : User!
+    var events : [Event]!
     
+    
+    func mapping(map: Map) {
+        
+    }
+    
+    required init?(map: Map) {
+        user <- map["user"]
+        events <- map["events"]
+    }
+
 }

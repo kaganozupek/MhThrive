@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 
 class MainController: BaseViewController,GetEventDelegate {
     
@@ -58,13 +58,18 @@ class MainController: BaseViewController,GetEventDelegate {
         let api : THApi = THApi()
         api.getEvents(viewController: self, delegate: self)
     }
-    func showEvents()
+    func showEvents(eventResponse : GetEventResponse)
     {
+        if(eventResponse.events != nil)
+        {
+            RealmHepler.sharedInstance.saveEvents(events: eventResponse.events)
+        }
         eventSource = EventTableSource()
+        eventSource.datasource = Utils.sharedInstance.groupEvents(events: RealmHepler.sharedInstance.getEvents())
         self.tblEvents.delegate = eventSource
         self.tblEvents.dataSource = eventSource
         self.tblEvents.reloadData()
-    
+        self.tableHeaderView.setUpcommingCount(count: RealmHepler.sharedInstance.getEvents().count)
     }
     
     override func viewsForStateChange() -> [UIView]! {
@@ -72,9 +77,12 @@ class MainController: BaseViewController,GetEventDelegate {
     }
     
     
+    
+    
     func getEventsSuccess(response: GetEventResponse) {
+        
         setPageState(pageState: .DONE)
-        self.showEvents()
+        self.showEvents(eventResponse: response)
     }
     
     func getEventFailed(errorCode: Int) {

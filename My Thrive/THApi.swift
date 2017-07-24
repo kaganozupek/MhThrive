@@ -44,8 +44,8 @@ class THApi: NSObject,THRequestDelegate {
         {
             
             let getEventDelegate : GetEventDelegate = baseDelegate as! GetEventDelegate
-            let responseObject : GetEventResponse = 
-            getEventDelegate.getEventsSuccess!(response: GetEventResponse())
+          
+            getEventDelegate.getEventsSuccess!(response: GetEventResponse(JSONString: response)!)
         }
     }
     

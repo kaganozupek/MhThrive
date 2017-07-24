@@ -26,8 +26,8 @@
 		9F5827731F2656C00045A6CF /* THRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827721F2656C00045A6CF /* THRequest.swift */; };
 		9F5827761F265FEB0045A6CF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827751F265FEB0045A6CF /* Event.swift */; };
 		9F5827791F2660240045A6CF /* GetEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827781F2660240045A6CF /* GetEventResponse.swift */; };
-		9F58277B1F266EAA0045A6CF /* THJsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58277A1F266EAA0045A6CF /* THJsonParser.swift */; };
 		9F58277D1F266F030045A6CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58277C1F266F030045A6CF /* User.swift */; };
+		9FD57A3A1F267CC40089B714 /* RealmHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD57A391F267CC40089B714 /* RealmHepler.swift */; };
 		9FD6B4B11F264FF600700499 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B01F264FF600700499 /* Utils.swift */; };
 		9FD6B4B31F26504A00700499 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B21F26504A00700499 /* Colors.swift */; };
 		9FD6B4B61F2650F100700499 /* bemetest.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B51F2650F100700499 /* bemetest.json */; };
@@ -84,8 +84,8 @@
 		9F5827721F2656C00045A6CF /* THRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THRequest.swift; sourceTree = "<group>"; };
 		9F5827751F265FEB0045A6CF /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F5827781F2660240045A6CF /* GetEventResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEventResponse.swift; sourceTree = "<group>"; };
-		9F58277A1F266EAA0045A6CF /* THJsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THJsonParser.swift; sourceTree = "<group>"; };
 		9F58277C1F266F030045A6CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9FD57A391F267CC40089B714 /* RealmHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHepler.swift; sourceTree = "<group>"; };
 		9FD6B4B01F264FF600700499 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9FD6B4B21F26504A00700499 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9FD6B4B51F2650F100700499 /* bemetest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bemetest.json; sourceTree = "<group>"; };
@@ -256,7 +256,7 @@
 				9FD6B4B21F26504A00700499 /* Colors.swift */,
 				9F5827701F2656020045A6CF /* THApi.swift */,
 				9F5827721F2656C00045A6CF /* THRequest.swift */,
-				9F58277A1F266EAA0045A6CF /* THJsonParser.swift */,
+				9FD57A391F267CC40089B714 /* RealmHepler.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -582,7 +582,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F58277B1F266EAA0045A6CF /* THJsonParser.swift in Sources */,
 				9F5827711F2656020045A6CF /* THApi.swift in Sources */,
 				9F0C55291F2503C9003A12E4 /* Constants.swift in Sources */,
 				9FD6B4B91F26513300700499 /* THDateCell.swift in Sources */,
@@ -594,6 +593,7 @@
 				9F0C551E1F24F8D8003A12E4 /* MainController.swift in Sources */,
 				9FFB28711F25265C005C19F8 /* THEventCellTableViewCell.swift in Sources */,
 				9F41BC101F252A900030D07A /* EventTableSource.swift in Sources */,
+				9FD57A3A1F267CC40089B714 /* RealmHepler.swift in Sources */,
 				9F0C55221F24FF40003A12E4 /* THTableHeaderView.swift in Sources */,
 				9F0C54EB1F24F7E5003A12E4 /* AppDelegate.swift in Sources */,
 				9F5827761F265FEB0045A6CF /* Event.swift in Sources */,

@@ -13,7 +13,7 @@ class Constants: NSObject {
     static let dimensionHeaderViewHeight = 250;
     static let dimensionTxUpCommingCountCornerRadius : CGFloat! = 10.0;
     static let dimensionCardViewCornerRadius :CGFloat! = 10;
-    
+    static let dimensionUpcommingCountBorder : CGFloat = 2;
     
     //CellIdentifiers
     static let cellIdentifierEventCell : String = "EventCellIdentifier";
