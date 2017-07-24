@@ -1,0 +1,44 @@
+{
+   "events":[
+      {
+         "description":"Career Management",
+         "end_date":"Jul 23, 2017 2:09:28 PM",
+         "event_owner":{
+            "profile":"http://b.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/08/3034272-poster-p-1-jack-dorsey-responds-to-square-criticism.jpg",
+            "user_name":"Kwok Miyaki"
+         },
+         "start_date":"Jul 23, 2017 2:09:28 PM"
+      },
+      {
+         "description":"Bussiness Planning",
+         "end_date":"Jul 23, 2017 2:09:28 PM",
+         "event_owner":{
+            "profile":"http://b.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/08/3034272-poster-p-1-jack-dorsey-responds-to-square-criticism.jpg",
+            "user_name":"Luisa Mankera"
+         },
+         "start_date":"Jul 23, 2017 2:09:28 PM"
+      },
+      {
+         "description":"Kill Dursun Ozbek",
+         "end_date":"Jul 23, 2017 2:09:29 PM",
+         "event_owner":{
+            "profile":"http://b.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/08/3034272-poster-p-1-jack-dorsey-responds-to-square-criticism.jpg",
+            "user_name":"Wesley Sneijder"
+         },
+         "start_date":"Jul 23, 2017 2:09:29 PM"
+      },
+      {
+         "description":"Eto Bitmis mi?",
+         "end_date":"Jul 23, 2017 2:09:30 PM",
+         "event_owner":{
+            "profile":"http://b.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/08/3034272-poster-p-1-jack-dorsey-responds-to-square-criticism.jpg",
+            "user_name":"Oktay Derelioglu"
+         },
+         "start_date":"Jul 23, 2017 2:09:30 PM"
+      }
+   ],
+   "user":{
+      "user_name":"Yagiz Nizipli",
+      "profile":"http://b.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/08/3034272-poster-p-1-jack-dorsey-responds-to-square-criticism.jpg"
+   }
+}
