@@ -14,6 +14,14 @@ class Constants: NSObject {
     static let dimensionTxUpCommingCountCornerRadius : CGFloat! = 10.0;
     static let dimensionCardViewCornerRadius :CGFloat! = 10;
     static let dimensionUpcommingCountBorder : CGFloat = 2;
+    static let dimensionRatioSideBar : CGFloat = 0.75;
+    static let dimensionRatioSideBarOpen : CGFloat = 0.25;
+    
+    //Values
+    static let valueDefaultSideBarAnimationDuration : CGFloat = 0.7
+    static let valueSideBarCloseViewDefaultAlpha : CGFloat = 0.6
+    
+    
     
     //CellIdentifiers
     static let cellIdentifierEventCell : String = "EventCellIdentifier";

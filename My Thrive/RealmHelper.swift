@@ -8,9 +8,9 @@
 
 import UIKit
 import RealmSwift
-class RealmHepler: NSObject {
+class RealmHelper: NSObject {
 
-    static let sharedInstance = RealmHepler()
+    static let sharedInstance = RealmHelper()
     func saveEvents(events : [Event])
     {
         let realm = try! Realm()

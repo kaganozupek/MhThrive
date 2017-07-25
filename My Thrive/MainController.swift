@@ -11,6 +11,11 @@ import RealmSwift
 
 class MainController: BaseViewController,GetEventDelegate {
     
+    //Ipad Outlets
+    @IBOutlet weak var sideBarContainerView: UIView!
+    
+    
+    
     @IBOutlet weak var tblEvents: UITableView!
     
     var tableHeaderView : THTableHeaderView!;
@@ -19,19 +24,12 @@ class MainController: BaseViewController,GetEventDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initViews()
+        self.setupSideBar(container : sideBarContainerView)
         self.loadEvents()
-       
+     
         
         // Do any additional setup after loading the view.
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
     
     func initViews(){
         initTableHeaderView()
@@ -42,6 +40,11 @@ class MainController: BaseViewController,GetEventDelegate {
         tblEvents.separatorStyle = .none
     }
     
+    @IBAction func CLSideBar(_ sender: Any) {
+        
+        super.showSideBar(duration: Constants.valueDefaultSideBarAnimationDuration)
+        
+    }
     func initTableHeaderView(){
         let headerRect : CGRect = CGRect(x: 0, y: 0, width: Int(tblEvents.frame.size.width), height: Constants.dimensionHeaderViewHeight)
         tableHeaderView = UINib(nibName: "THTableHeaderView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! THTableHeaderView
@@ -62,14 +65,14 @@ class MainController: BaseViewController,GetEventDelegate {
     {
         if(eventResponse.events != nil)
         {
-            RealmHepler.sharedInstance.saveEvents(events: eventResponse.events)
+            RealmHelper.sharedInstance.saveEvents(events: eventResponse.events)
         }
         eventSource = EventTableSource()
-        eventSource.datasource = Utils.sharedInstance.groupEvents(events: RealmHepler.sharedInstance.getEvents())
+        eventSource.datasource = Utils.sharedInstance.groupEvents(events: RealmHelper.sharedInstance.getEvents())
         self.tblEvents.delegate = eventSource
         self.tblEvents.dataSource = eventSource
         self.tblEvents.reloadData()
-        self.tableHeaderView.setUpcommingCount(count: RealmHepler.sharedInstance.getEvents().count)
+        self.tableHeaderView.setUpcommingCount(count: RealmHelper.sharedInstance.getEvents().count)
     }
     
     override func viewsForStateChange() -> [UIView]! {

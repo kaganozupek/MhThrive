@@ -21,13 +21,16 @@
 		9F0C55261F24FF81003A12E4 /* THTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C55251F24FF81003A12E4 /* THTableHeaderView.xib */; };
 		9F0C55291F2503C9003A12E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C55281F2503C9003A12E4 /* Constants.swift */; };
 		9F0C552B1F250BB2003A12E4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0C552A1F250BB2003A12E4 /* BaseViewController.swift */; };
+		9F1AB9FE1F27D80800C459CA /* MainController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1AB9FD1F27D80800C459CA /* MainController~ipad.xib */; };
+		9F1ABA011F27DB7A00C459CA /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1AB9FF1F27DB7A00C459CA /* SideBarController.swift */; };
+		9F1ABA021F27DB7A00C459CA /* SideBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1ABA001F27DB7A00C459CA /* SideBarController.xib */; };
 		9F41BC101F252A900030D07A /* EventTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41BC0F1F252A900030D07A /* EventTableSource.swift */; };
 		9F5827711F2656020045A6CF /* THApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827701F2656020045A6CF /* THApi.swift */; };
 		9F5827731F2656C00045A6CF /* THRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827721F2656C00045A6CF /* THRequest.swift */; };
 		9F5827761F265FEB0045A6CF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827751F265FEB0045A6CF /* Event.swift */; };
 		9F5827791F2660240045A6CF /* GetEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827781F2660240045A6CF /* GetEventResponse.swift */; };
 		9F58277D1F266F030045A6CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F58277C1F266F030045A6CF /* User.swift */; };
-		9FD57A3A1F267CC40089B714 /* RealmHepler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD57A391F267CC40089B714 /* RealmHepler.swift */; };
+		9FD57A3A1F267CC40089B714 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD57A391F267CC40089B714 /* RealmHelper.swift */; };
 		9FD6B4B11F264FF600700499 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B01F264FF600700499 /* Utils.swift */; };
 		9FD6B4B31F26504A00700499 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B21F26504A00700499 /* Colors.swift */; };
 		9FD6B4B61F2650F100700499 /* bemetest.json in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6B4B51F2650F100700499 /* bemetest.json */; };
@@ -79,13 +82,16 @@
 		9F0C55251F24FF81003A12E4 /* THTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = THTableHeaderView.xib; sourceTree = "<group>"; };
 		9F0C55281F2503C9003A12E4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9F0C552A1F250BB2003A12E4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9F1AB9FD1F27D80800C459CA /* MainController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainController~ipad.xib"; sourceTree = "<group>"; };
+		9F1AB9FF1F27DB7A00C459CA /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
+		9F1ABA001F27DB7A00C459CA /* SideBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideBarController.xib; sourceTree = "<group>"; };
 		9F41BC0F1F252A900030D07A /* EventTableSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableSource.swift; sourceTree = "<group>"; };
 		9F5827701F2656020045A6CF /* THApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THApi.swift; sourceTree = "<group>"; };
 		9F5827721F2656C00045A6CF /* THRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THRequest.swift; sourceTree = "<group>"; };
 		9F5827751F265FEB0045A6CF /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9F5827781F2660240045A6CF /* GetEventResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEventResponse.swift; sourceTree = "<group>"; };
 		9F58277C1F266F030045A6CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		9FD57A391F267CC40089B714 /* RealmHepler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHepler.swift; sourceTree = "<group>"; };
+		9FD57A391F267CC40089B714 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		9FD6B4B01F264FF600700499 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		9FD6B4B21F26504A00700499 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9FD6B4B51F2650F100700499 /* bemetest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bemetest.json; sourceTree = "<group>"; };
@@ -175,6 +181,8 @@
 		9F0C54E91F24F7E5003A12E4 /* My Thrive */ = {
 			isa = PBXGroup;
 			children = (
+				9F1AB9FC1F27D7FA00C459CA /* XIB-Ipad */,
+				9F1AB9FB1F27D7D000C459CA /* XIB */,
 				9F5827771F2660130045A6CF /* Response */,
 				9F5827741F265FD50045A6CF /* Models */,
 				9FD6B4B41F2650E600700499 /* SupportFiles */,
@@ -212,9 +220,9 @@
 		9F0C551B1F24F82E003A12E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9F0C55241F24FF66003A12E4 /* xibs */,
 				9F0C551C1F24F8D8003A12E4 /* MainController.swift */,
 				9F0C552A1F250BB2003A12E4 /* BaseViewController.swift */,
+				9F1AB9FF1F27DB7A00C459CA /* SideBarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -222,30 +230,11 @@
 		9F0C55201F24FF18003A12E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9F0C55231F24FF60003A12E4 /* xibs */,
 				9F0C55211F24FF40003A12E4 /* THTableHeaderView.swift */,
 				9FFB286F1F25265C005C19F8 /* THEventCellTableViewCell.swift */,
 				9FD6B4B71F26513300700499 /* THDateCell.swift */,
 			);
 			name = Views;
-			sourceTree = "<group>";
-		};
-		9F0C55231F24FF60003A12E4 /* xibs */ = {
-			isa = PBXGroup;
-			children = (
-				9FD6B4B81F26513300700499 /* THDateCell.xib */,
-				9FFB28701F25265C005C19F8 /* THEventCellTableViewCell.xib */,
-				9F0C55251F24FF81003A12E4 /* THTableHeaderView.xib */,
-			);
-			name = xibs;
-			sourceTree = "<group>";
-		};
-		9F0C55241F24FF66003A12E4 /* xibs */ = {
-			isa = PBXGroup;
-			children = (
-				9F0C551D1F24F8D8003A12E4 /* MainController.xib */,
-			);
-			name = xibs;
 			sourceTree = "<group>";
 		};
 		9F0C55271F2503AA003A12E4 /* Utils */ = {
@@ -256,9 +245,29 @@
 				9FD6B4B21F26504A00700499 /* Colors.swift */,
 				9F5827701F2656020045A6CF /* THApi.swift */,
 				9F5827721F2656C00045A6CF /* THRequest.swift */,
-				9FD57A391F267CC40089B714 /* RealmHepler.swift */,
+				9FD57A391F267CC40089B714 /* RealmHelper.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		9F1AB9FB1F27D7D000C459CA /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				9F0C551D1F24F8D8003A12E4 /* MainController.xib */,
+				9FD6B4B81F26513300700499 /* THDateCell.xib */,
+				9FFB28701F25265C005C19F8 /* THEventCellTableViewCell.xib */,
+				9F0C55251F24FF81003A12E4 /* THTableHeaderView.xib */,
+				9F1ABA001F27DB7A00C459CA /* SideBarController.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		9F1AB9FC1F27D7FA00C459CA /* XIB-Ipad */ = {
+			isa = PBXGroup;
+			children = (
+				9F1AB9FD1F27D80800C459CA /* MainController~ipad.xib */,
+			);
+			name = "XIB-Ipad";
 			sourceTree = "<group>";
 		};
 		9F41BC0E1F252A590030D07A /* TableSources */ = {
@@ -415,9 +424,11 @@
 			files = (
 				9F0C54F81F24F7E5003A12E4 /* LaunchScreen.storyboard in Resources */,
 				9FD6B4BA1F26513300700499 /* THDateCell.xib in Resources */,
+				9F1ABA021F27DB7A00C459CA /* SideBarController.xib in Resources */,
 				9F0C54F51F24F7E5003A12E4 /* Assets.xcassets in Resources */,
 				9FFB28721F25265C005C19F8 /* THEventCellTableViewCell.xib in Resources */,
 				9F0C55261F24FF81003A12E4 /* THTableHeaderView.xib in Resources */,
+				9F1AB9FE1F27D80800C459CA /* MainController~ipad.xib in Resources */,
 				9FD6B4B61F2650F100700499 /* bemetest.json in Resources */,
 				9F0C551F1F24F8D8003A12E4 /* MainController.xib in Resources */,
 			);
@@ -584,6 +595,7 @@
 			files = (
 				9F5827711F2656020045A6CF /* THApi.swift in Sources */,
 				9F0C55291F2503C9003A12E4 /* Constants.swift in Sources */,
+				9F1ABA011F27DB7A00C459CA /* SideBarController.swift in Sources */,
 				9FD6B4B91F26513300700499 /* THDateCell.swift in Sources */,
 				9FD6B4B31F26504A00700499 /* Colors.swift in Sources */,
 				9F0C54F31F24F7E5003A12E4 /* My_Thrive.xcdatamodeld in Sources */,
@@ -593,7 +605,7 @@
 				9F0C551E1F24F8D8003A12E4 /* MainController.swift in Sources */,
 				9FFB28711F25265C005C19F8 /* THEventCellTableViewCell.swift in Sources */,
 				9F41BC101F252A900030D07A /* EventTableSource.swift in Sources */,
-				9FD57A3A1F267CC40089B714 /* RealmHepler.swift in Sources */,
+				9FD57A3A1F267CC40089B714 /* RealmHelper.swift in Sources */,
 				9F0C55221F24FF40003A12E4 /* THTableHeaderView.swift in Sources */,
 				9F0C54EB1F24F7E5003A12E4 /* AppDelegate.swift in Sources */,
 				9F5827761F265FEB0045A6CF /* Event.swift in Sources */,

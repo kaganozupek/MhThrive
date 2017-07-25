@@ -7,6 +7,7 @@ target 'My Thrive' do
    pod 'SwiftyJSON'
    pod 'ObjectMapper', '~> 2.2'
    pod 'RealmSwift'
+   pod 'SDWebImage', '~> 4.0'
    
   # Pods for My Thrive
 

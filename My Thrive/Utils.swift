@@ -140,6 +140,13 @@ class Utils: NSObject {
         let date = Calendar.current.date(byAdding: dayComp, to: date)
         return date!
     }
+    
+    func isOnIpad() -> Bool
+    {
+        
+        return UIDevice.current.userInterfaceIdiom == .pad
+    
+    }
 }
 
 

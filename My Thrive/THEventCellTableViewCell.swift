@@ -35,7 +35,9 @@ class THEventCellTableViewCell: UITableViewCell {
         let tintedImage = img.withRenderingMode(.alwaysTemplate)
         imgClock.image = tintedImage
         imgClock.tintColor = Colors.event_item_time
-        
+        imgEventOwner.clipsToBounds = true
+        imgEventOwner.contentMode = .scaleAspectFill
+        imgEventOwner.layer.cornerRadius = imgEventOwner.frame.size.height/2
     
     }
 

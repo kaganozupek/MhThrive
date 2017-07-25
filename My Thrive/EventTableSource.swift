@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class EventTableSource: NSObject,UITableViewDelegate,UITableViewDataSource {
     
@@ -31,6 +32,7 @@ class EventTableSource: NSObject,UITableViewDelegate,UITableViewDataSource {
             cell.lblEventName.text = event.desc as String
             cell.lblEventOwner.text = String("with \(event.event_owner.user_name!)")
             cell.lblTime.text = Utils.sharedInstance.getEventTimeIntervalText(event: event)
+            cell.imgEventOwner.sd_setImage(with: URL(string: event.event_owner.profile as String))
             return cell
 
             
