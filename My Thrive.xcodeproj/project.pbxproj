@@ -24,6 +24,16 @@
 		9F1AB9FE1F27D80800C459CA /* MainController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1AB9FD1F27D80800C459CA /* MainController~ipad.xib */; };
 		9F1ABA011F27DB7A00C459CA /* SideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1AB9FF1F27DB7A00C459CA /* SideBarController.swift */; };
 		9F1ABA021F27DB7A00C459CA /* SideBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1ABA001F27DB7A00C459CA /* SideBarController.xib */; };
+		9F1ABA041F27E62500C459CA /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1ABA031F27E62500C459CA /* WatchKit.framework */; };
+		9F1ABA061F27E62B00C459CA /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1ABA051F27E62B00C459CA /* WatchConnectivity.framework */; };
+		9F1ABA0D1F27E72A00C459CA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1ABA0B1F27E72A00C459CA /* Interface.storyboard */; };
+		9F1ABA0F1F27E72A00C459CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1ABA0E1F27E72A00C459CA /* Assets.xcassets */; };
+		9F1ABA161F27E72A00C459CA /* My Thrive Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9F1ABA151F27E72A00C459CA /* My Thrive Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9F1ABA1D1F27E72A00C459CA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1ABA1C1F27E72A00C459CA /* InterfaceController.swift */; };
+		9F1ABA1F1F27E72A00C459CA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1ABA1E1F27E72A00C459CA /* ExtensionDelegate.swift */; };
+		9F1ABA211F27E72A00C459CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1ABA201F27E72A00C459CA /* NotificationController.swift */; };
+		9F1ABA231F27E72A00C459CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1ABA221F27E72A00C459CA /* Assets.xcassets */; };
+		9F1ABA281F27E72A00C459CA /* My Thrive Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9F1ABA091F27E72A00C459CA /* My Thrive Watch.app */; };
 		9F41BC101F252A900030D07A /* EventTableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F41BC0F1F252A900030D07A /* EventTableSource.swift */; };
 		9F5827711F2656020045A6CF /* THApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827701F2656020045A6CF /* THApi.swift */; };
 		9F5827731F2656C00045A6CF /* THRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5827721F2656C00045A6CF /* THRequest.swift */; };
@@ -56,7 +66,46 @@
 			remoteGlobalIDString = 9F0C54E61F24F7E5003A12E4;
 			remoteInfo = "My Thrive";
 		};
+		9F1ABA171F27E72A00C459CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F0C54DF1F24F7E5003A12E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1ABA141F27E72A00C459CA;
+			remoteInfo = "My Thrive Watch Extension";
+		};
+		9F1ABA251F27E72A00C459CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F0C54DF1F24F7E5003A12E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F1ABA081F27E72A00C459CA;
+			remoteInfo = "My Thrive Watch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9F1ABA271F27E72A00C459CA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				9F1ABA281F27E72A00C459CA /* My Thrive Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1ABA2C1F27E72A00C459CA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9F1ABA161F27E72A00C459CA /* My Thrive Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2506E9DDAAFF80A7421490EB /* Pods_My_ThriveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_ThriveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +134,19 @@
 		9F1AB9FD1F27D80800C459CA /* MainController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainController~ipad.xib"; sourceTree = "<group>"; };
 		9F1AB9FF1F27DB7A00C459CA /* SideBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBarController.swift; sourceTree = "<group>"; };
 		9F1ABA001F27DB7A00C459CA /* SideBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideBarController.xib; sourceTree = "<group>"; };
+		9F1ABA031F27E62500C459CA /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		9F1ABA051F27E62B00C459CA /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		9F1ABA091F27E72A00C459CA /* My Thrive Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Thrive Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1ABA0C1F27E72A00C459CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9F1ABA0E1F27E72A00C459CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F1ABA101F27E72A00C459CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F1ABA151F27E72A00C459CA /* My Thrive Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "My Thrive Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F1ABA1B1F27E72A00C459CA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		9F1ABA1C1F27E72A00C459CA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9F1ABA1E1F27E72A00C459CA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9F1ABA201F27E72A00C459CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		9F1ABA221F27E72A00C459CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F1ABA241F27E72A00C459CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F41BC0F1F252A900030D07A /* EventTableSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableSource.swift; sourceTree = "<group>"; };
 		9F5827701F2656020045A6CF /* THApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THApi.swift; sourceTree = "<group>"; };
 		9F5827721F2656C00045A6CF /* THRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THRequest.swift; sourceTree = "<group>"; };
@@ -110,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1ABA061F27E62B00C459CA /* WatchConnectivity.framework in Frameworks */,
+				9F1ABA041F27E62500C459CA /* WatchKit.framework in Frameworks */,
 				1DF1B5274FB2F2F1B8B028EC /* Pods_My_Thrive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E737B94601E8260FFBBC700 /* Pods_My_ThriveUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1ABA121F27E72A00C459CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +220,8 @@
 		4F9C7A13D3F34CEE1945FE31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F1ABA051F27E62B00C459CA /* WatchConnectivity.framework */,
+				9F1ABA031F27E62500C459CA /* WatchKit.framework */,
 				273A3913AC4EAA8E745A41C1 /* Pods_My_Thrive.framework */,
 				2506E9DDAAFF80A7421490EB /* Pods_My_ThriveTests.framework */,
 				69D9B36A71E8829C19CE7251 /* Pods_My_ThriveUITests.framework */,
@@ -162,6 +235,8 @@
 				9F0C54E91F24F7E5003A12E4 /* My Thrive */,
 				9F0C55011F24F7E6003A12E4 /* My ThriveTests */,
 				9F0C550C1F24F7E6003A12E4 /* My ThriveUITests */,
+				9F1ABA0A1F27E72A00C459CA /* My Thrive Watch */,
+				9F1ABA191F27E72A00C459CA /* My Thrive Watch Extension */,
 				9F0C54E81F24F7E5003A12E4 /* Products */,
 				1EB17F73D6BAC7365EA4CE57 /* Pods */,
 				4F9C7A13D3F34CEE1945FE31 /* Frameworks */,
@@ -174,6 +249,8 @@
 				9F0C54E71F24F7E5003A12E4 /* My Thrive.app */,
 				9F0C54FE1F24F7E6003A12E4 /* My ThriveTests.xctest */,
 				9F0C55091F24F7E6003A12E4 /* My ThriveUITests.xctest */,
+				9F1ABA091F27E72A00C459CA /* My Thrive Watch.app */,
+				9F1ABA151F27E72A00C459CA /* My Thrive Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +347,37 @@
 			name = "XIB-Ipad";
 			sourceTree = "<group>";
 		};
+		9F1ABA0A1F27E72A00C459CA /* My Thrive Watch */ = {
+			isa = PBXGroup;
+			children = (
+				9F1ABA0B1F27E72A00C459CA /* Interface.storyboard */,
+				9F1ABA0E1F27E72A00C459CA /* Assets.xcassets */,
+				9F1ABA101F27E72A00C459CA /* Info.plist */,
+			);
+			path = "My Thrive Watch";
+			sourceTree = "<group>";
+		};
+		9F1ABA191F27E72A00C459CA /* My Thrive Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9F1ABA1C1F27E72A00C459CA /* InterfaceController.swift */,
+				9F1ABA1E1F27E72A00C459CA /* ExtensionDelegate.swift */,
+				9F1ABA201F27E72A00C459CA /* NotificationController.swift */,
+				9F1ABA221F27E72A00C459CA /* Assets.xcassets */,
+				9F1ABA241F27E72A00C459CA /* Info.plist */,
+				9F1ABA1A1F27E72A00C459CA /* Supporting Files */,
+			);
+			path = "My Thrive Watch Extension";
+			sourceTree = "<group>";
+		};
+		9F1ABA1A1F27E72A00C459CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F1ABA1B1F27E72A00C459CA /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9F41BC0E1F252A590030D07A /* TableSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,10 +424,12 @@
 				9F0C54E51F24F7E5003A12E4 /* Resources */,
 				ECB7B15F4AE6C587C6AE4A51 /* [CP] Embed Pods Frameworks */,
 				8C5C9229A29C9DDBA6763380 /* [CP] Copy Pods Resources */,
+				9F1ABA271F27E72A00C459CA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9F1ABA261F27E72A00C459CA /* PBXTargetDependency */,
 			);
 			name = "My Thrive";
 			productName = "My Thrive";
@@ -368,6 +478,40 @@
 			productReference = 9F0C55091F24F7E6003A12E4 /* My ThriveUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9F1ABA081F27E72A00C459CA /* My Thrive Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F1ABA2D1F27E72A00C459CA /* Build configuration list for PBXNativeTarget "My Thrive Watch" */;
+			buildPhases = (
+				9F1ABA071F27E72A00C459CA /* Resources */,
+				9F1ABA2C1F27E72A00C459CA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F1ABA181F27E72A00C459CA /* PBXTargetDependency */,
+			);
+			name = "My Thrive Watch";
+			productName = "My Thrive Watch";
+			productReference = 9F1ABA091F27E72A00C459CA /* My Thrive Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9F1ABA141F27E72A00C459CA /* My Thrive Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F1ABA291F27E72A00C459CA /* Build configuration list for PBXNativeTarget "My Thrive Watch Extension" */;
+			buildPhases = (
+				9F1ABA111F27E72A00C459CA /* Sources */,
+				9F1ABA121F27E72A00C459CA /* Frameworks */,
+				9F1ABA131F27E72A00C459CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Thrive Watch Extension";
+			productName = "My Thrive Watch Extension";
+			productReference = 9F1ABA151F27E72A00C459CA /* My Thrive Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -395,6 +539,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9F0C54E61F24F7E5003A12E4;
 					};
+					9F1ABA081F27E72A00C459CA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LQTS4P3TYP;
+						ProvisioningStyle = Automatic;
+					};
+					9F1ABA141F27E72A00C459CA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LQTS4P3TYP;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 9F0C54E21F24F7E5003A12E4 /* Build configuration list for PBXProject "My Thrive" */;
@@ -413,6 +567,8 @@
 				9F0C54E61F24F7E5003A12E4 /* My Thrive */,
 				9F0C54FD1F24F7E6003A12E4 /* My ThriveTests */,
 				9F0C55081F24F7E6003A12E4 /* My ThriveUITests */,
+				9F1ABA081F27E72A00C459CA /* My Thrive Watch */,
+				9F1ABA141F27E72A00C459CA /* My Thrive Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -445,6 +601,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1ABA071F27E72A00C459CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1ABA0F1F27E72A00C459CA /* Assets.xcassets in Resources */,
+				9F1ABA0D1F27E72A00C459CA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F1ABA131F27E72A00C459CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1ABA231F27E72A00C459CA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +803,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9F1ABA111F27E72A00C459CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F1ABA211F27E72A00C459CA /* NotificationController.swift in Sources */,
+				9F1ABA1F1F27E72A00C459CA /* ExtensionDelegate.swift in Sources */,
+				9F1ABA1D1F27E72A00C459CA /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -643,6 +826,16 @@
 			target = 9F0C54E61F24F7E5003A12E4 /* My Thrive */;
 			targetProxy = 9F0C550A1F24F7E6003A12E4 /* PBXContainerItemProxy */;
 		};
+		9F1ABA181F27E72A00C459CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F1ABA141F27E72A00C459CA /* My Thrive Watch Extension */;
+			targetProxy = 9F1ABA171F27E72A00C459CA /* PBXContainerItemProxy */;
+		};
+		9F1ABA261F27E72A00C459CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F1ABA081F27E72A00C459CA /* My Thrive Watch */;
+			targetProxy = 9F1ABA251F27E72A00C459CA /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -652,6 +845,14 @@
 				9F0C54F71F24F7E5003A12E4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9F1ABA0B1F27E72A00C459CA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F1ABA0C1F27E72A00C459CA /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -844,6 +1045,76 @@
 			};
 			name = Release;
 		};
+		9F1ABA2A1F27E72A00C459CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = LQTS4P3TYP;
+				INFOPLIST_FILE = "My Thrive Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beme.mythrive.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		9F1ABA2B1F27E72A00C459CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = LQTS4P3TYP;
+				INFOPLIST_FILE = "My Thrive Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beme.mythrive.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		9F1ABA2E1F27E72A00C459CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LQTS4P3TYP;
+				IBSC_MODULE = My_Thrive_Watch_Extension;
+				INFOPLIST_FILE = "My Thrive Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beme.mythrive.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		9F1ABA2F1F27E72A00C459CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LQTS4P3TYP;
+				IBSC_MODULE = My_Thrive_Watch_Extension;
+				INFOPLIST_FILE = "My Thrive Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beme.mythrive.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -882,6 +1153,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		9F1ABA291F27E72A00C459CA /* Build configuration list for PBXNativeTarget "My Thrive Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1ABA2A1F27E72A00C459CA /* Debug */,
+				9F1ABA2B1F27E72A00C459CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9F1ABA2D1F27E72A00C459CA /* Build configuration list for PBXNativeTarget "My Thrive Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F1ABA2E1F27E72A00C459CA /* Debug */,
+				9F1ABA2F1F27E72A00C459CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

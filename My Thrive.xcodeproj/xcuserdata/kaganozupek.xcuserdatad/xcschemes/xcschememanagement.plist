@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>My Thrive Watch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>My Thrive Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>My Thrive.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>9F0C55081F24F7E6003A12E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F1ABA081F27E72A00C459CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
