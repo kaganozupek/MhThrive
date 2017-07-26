@@ -22,20 +22,81 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     var sideBarWidth: CGFloat!
     var sideBarCloseView: UIView!
     var sideBarController : UIViewController!
+    var errorButton : UILabel!
+    var rootView : UIView!
     override func viewDidLoad() {
+        super.viewDidLoad()
+        if Utils.sharedInstance.isOnIpad() && getViewRoot() != nil
+        {
+            rootView = getViewRoot()
+        
+        }else{
+            rootView = self.view
+        }
+      
         self.initIndicatorView()
+        self.initTapToRetryView()
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) { 
+            _ = self.getCenterOfScreen()
+        }
     }
+    
+    
 
+    
+    
+    func getCenterOfScreen() -> CGPoint
+    {
+        if !Utils.sharedInstance.isOnIpad(){
+            let screenRect : CGRect = UIScreen.main.bounds
+            print(CGPoint(x: screenRect.width/2, y: screenRect.height/2)
+)
+            return CGPoint(x: screenRect.width/2, y: screenRect.height/2)
+        }else
+        {   print(CGPoint(x: rootView.frame.size.width/2, y: rootView.frame.size.height/2))
+            return CGPoint(x: rootView.frame.size.width/2, y: rootView.frame.size.height/2)
+        }
+    }
+    
     func initIndicatorView()
     {
         indicatorView = UIActivityIndicatorView(frame: CGRect(origin: CGPoint(), size: CGSize(width: 100, height: 100)))
+        
         indicatorView.activityIndicatorViewStyle = .whiteLarge
         indicatorView.color = UIColor.darkGray
-        indicatorView.center = self.view.center
-        self.view.addSubview(indicatorView)
+        indicatorView.center = getCenterOfScreen()
+        rootView.addSubview(indicatorView)
 
         //indicatorView.isHidden = true
     }
+    
+    func initTapToRetryView()
+    {
+        errorButton = UILabel(frame: CGRect(origin: CGPoint(), size: CGSize(width: rootView.frame.width - 20, height: 100)))
+        errorButton.textColor = UIColor.black
+        errorButton.center = getCenterOfScreen()
+        
+        rootView.addSubview(errorButton)
+        errorButton.isHidden = true
+        errorButton.numberOfLines = 0
+        errorButton.textAlignment = .center
+        errorButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.onRetryTapped)))
+        errorButton.isUserInteractionEnabled = true
+    }
+    
+    
+    func onRetryTapped()
+    {
+    
+    }
+    
+    func getViewRoot() -> UIView!
+    {
+        return nil
+    }
+
 
     func viewsForStateChange() -> [UIView]!
     {
@@ -43,7 +104,12 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     }
 
 
-    func setPageState(pageState: PageState)
+    func setPageState(pageState : PageState)
+    {
+        setPageState(pageState : pageState,error : nil)
+    }
+    
+    func setPageState(pageState: PageState,error : String!)
     {
 
         switch pageState {
@@ -53,6 +119,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
                 view.isHidden = true
             }
             indicatorView.startAnimating()
+            errorButton.isHidden = true
             break
 
         case .DONE:
@@ -60,10 +127,19 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
                 view.isHidden = false
             }
             indicatorView.stopAnimating()
+             errorButton.isHidden = true
             break
-
-        default:
+        case .ERROR:
+            for view: UIView in viewsForStateChange() {
+                view.isHidden = true
+            }
+            indicatorView.stopAnimating()
+            errorButton.isHidden = false
+            if(error != nil){
+                errorButton.text = error
+            }
             break
+        
         }
     }
 

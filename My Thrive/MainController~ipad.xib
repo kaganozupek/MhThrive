@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainController" customModule="My_Thrive" customModuleProvider="target">
             <connections>
+                <outlet property="rootViewForController" destination="CMH-dk-WBw" id="KBm-dr-2VL"/>
                 <outlet property="sideBarContainerView" destination="quD-v3-qPD" id="eHI-Jt-Grg"/>
                 <outlet property="tblEvents" destination="30v-w9-EP6" id="66J-eh-xtP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -98,10 +99,6 @@
                         <constraint firstItem="beO-CE-LtM" firstAttribute="leading" secondItem="Seh-aK-Kjp" secondAttribute="trailing" id="x5P-sK-5iT"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="30v-w9-EP6">
-                    <rect key="frame" x="300" y="80" width="468" height="944"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quD-v3-qPD">
                     <rect key="frame" x="0.0" y="80" width="300" height="944"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,17 +106,28 @@
                         <constraint firstAttribute="width" constant="300" id="VHW-6J-MEO"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMH-dk-WBw">
+                    <rect key="frame" x="300" y="80" width="468" height="944"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="30v-w9-EP6">
+                            <rect key="frame" x="0.0" y="0.0" width="468" height="944"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="30v-w9-EP6" firstAttribute="top" secondItem="2WW-d8-lIn" secondAttribute="bottom" id="0YD-cw-dYp"/>
-                <constraint firstAttribute="bottom" secondItem="30v-w9-EP6" secondAttribute="bottom" id="9E5-QG-Jzx"/>
-                <constraint firstAttribute="trailing" secondItem="30v-w9-EP6" secondAttribute="trailing" id="9Ta-GR-Rj5"/>
-                <constraint firstItem="30v-w9-EP6" firstAttribute="leading" secondItem="quD-v3-qPD" secondAttribute="trailing" id="FSo-Cq-Pht"/>
+                <constraint firstItem="CMH-dk-WBw" firstAttribute="leading" secondItem="quD-v3-qPD" secondAttribute="trailing" id="4xV-SU-0g9"/>
+                <constraint firstItem="CMH-dk-WBw" firstAttribute="top" secondItem="2WW-d8-lIn" secondAttribute="bottom" id="GQx-5n-fng"/>
                 <constraint firstItem="quD-v3-qPD" firstAttribute="top" secondItem="2WW-d8-lIn" secondAttribute="bottom" id="KQp-4H-U9q"/>
                 <constraint firstItem="2WW-d8-lIn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qbb-kZ-9rJ"/>
+                <constraint firstAttribute="trailing" secondItem="CMH-dk-WBw" secondAttribute="trailing" id="RVm-BS-idm"/>
                 <constraint firstItem="quD-v3-qPD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yps-kN-Wxo"/>
                 <constraint firstAttribute="bottom" secondItem="quD-v3-qPD" secondAttribute="bottom" id="ZZs-bY-CKp"/>
+                <constraint firstAttribute="bottom" secondItem="CMH-dk-WBw" secondAttribute="bottom" id="aTh-OM-Ph6"/>
                 <constraint firstItem="2WW-d8-lIn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="dOJ-h1-ZwZ"/>
                 <constraint firstAttribute="trailing" secondItem="2WW-d8-lIn" secondAttribute="trailing" id="egj-PP-oKr"/>
             </constraints>

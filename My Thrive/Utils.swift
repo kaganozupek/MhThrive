@@ -208,6 +208,25 @@ class Utils: NSObject {
         
         return randomString
     }
+    
+    
+    func getErrorLocalizedDescription(errorCode : Int) -> String
+    {
+        switch errorCode {
+        case Constants.apiErrorCodeInternalError:
+            return "Internal Error Occured\nTap to retry"
+        case Constants.apiErrorCodeUnknown:
+            return "Internal Error Occured\nTap to retry"
+        case Constants.apiErrorCodeUnspecified:
+            return "Unknown Unspecified Occured\nTap to retry"
+            
+        default:
+            return ""
+            
+        }
+    
+    
+    }
 }
 
 

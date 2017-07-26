@@ -18,6 +18,7 @@ class MainController: BaseViewController,GetEventDelegate ,EventTableSourceDelag
     
     @IBOutlet weak var tblEvents: UITableView!
     
+    @IBOutlet weak var rootViewForController: UIView!
     var tableHeaderView : THTableHeaderView!;
     var eventSource : EventTableSource!
     var notificationToken : NotificationToken!
@@ -130,12 +131,22 @@ class MainController: BaseViewController,GetEventDelegate ,EventTableSourceDelag
     }
     
     func getEventFailed(errorCode: Int) {
-        setPageState(pageState: .DONE)
+        setPageState(pageState: .ERROR,error: Utils.sharedInstance.getErrorLocalizedDescription(errorCode: errorCode))
     }
     
     
     func onBookNowClicked() {
         self.openBookNowPage()
     }
+    
+    override func onRetryTapped() {
+        self.loadEvents()
+    }
+    
+    override func getViewRoot() -> UIView! {
+        return self.rootViewForController
+    }
+    
+    
     
 }

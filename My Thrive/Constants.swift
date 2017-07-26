@@ -41,8 +41,8 @@ class Constants: NSObject {
     //Test Variables
     static let testVariableDummyResponseTime : Double  = 3
     static let testVariableHttpStatusCode : Int = 200
-    static let tesetVariableErrorCode = apiErrorCodeSuccess
-    static let testVariableLoadFromJson : Bool = false
+    static let tesetVariableErrorCode = apiErrorCodeInternalError
+    static let testVariableLoadFromJson : Bool = true
     
   
     //API Error Codes
