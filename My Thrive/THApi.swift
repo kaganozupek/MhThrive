@@ -25,7 +25,7 @@ class THApi: NSObject,THRequestDelegate {
     
     var baseDelegate : BaseDelegate!
     var url : String!
-    func getEvents(viewController : UIViewController,delegate : GetEventDelegate!)
+    func getEvents(viewController : NSObject,delegate : GetEventDelegate!)
     {
         self.baseDelegate = delegate
         self.url = Constants.urlGetEvents

@@ -69,6 +69,9 @@
                                     <state key="normal" title="Book Now">
                                         <color key="titleColor" red="0.031372549019607843" green="0.71764705882352942" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="CLBookNow:" destination="-1" eventType="touchUpInside" id="3fd-QH-chq"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>

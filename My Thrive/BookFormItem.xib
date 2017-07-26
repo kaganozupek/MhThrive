@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookFormItem" customModule="My_Thrive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bpF-rE-BdU">
+                    <rect key="frame" x="0.0" y="5" width="375" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2vZ-PQ-RTG"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dcU-9z-EcE">
+                    <rect key="frame" x="0.0" y="50" width="375" height="13.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13.5" id="BC8-gV-syj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.80926792512690349" green="0.12105904514305507" blue="0.0069918996841770399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dcU-9z-EcE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9vg-RA-EsN"/>
+                <constraint firstItem="bpF-rE-BdU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="CGl-h1-rr9"/>
+                <constraint firstAttribute="trailing" secondItem="dcU-9z-EcE" secondAttribute="trailing" id="LSP-qh-CbT"/>
+                <constraint firstItem="dcU-9z-EcE" firstAttribute="top" secondItem="bpF-rE-BdU" secondAttribute="bottom" constant="5" id="VoY-MS-Zg6"/>
+                <constraint firstAttribute="trailing" secondItem="bpF-rE-BdU" secondAttribute="trailing" id="cWp-Jb-0Gw"/>
+                <constraint firstAttribute="bottom" secondItem="dcU-9z-EcE" secondAttribute="bottom" priority="100" constant="30" id="fG6-MV-GTG"/>
+                <constraint firstItem="bpF-rE-BdU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="np3-o9-LFG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblWarning" destination="dcU-9z-EcE" id="cI5-hK-5wu"/>
+                <outlet property="textField" destination="bpF-rE-BdU" id="Q32-zA-50G"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="-167"/>
+        </view>
+    </objects>
+</document>

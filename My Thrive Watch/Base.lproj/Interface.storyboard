@@ -12,7 +12,31 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="My_Thrive_Watch" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="My_Thrive_Watch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="tvm-ik-UVi">
+                            <items>
+                                <tableRow identifier="EventCellIdentifier" selectable="NO" id="gwS-Dl-zi7" customClass="THWatchEventCell" customModule="My_Thrive_Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="JCP-GT-WKY">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="6uB-fC-0y6"/>
+                                            <label alignment="left" text="Label" id="z47-jq-5TD">
+                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="lblEventName" destination="6uB-fC-0y6" id="ncf-P2-4Tl"/>
+                                        <outlet property="lblEventOwner" destination="z47-jq-5TD" id="7y7-zL-Wjw"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tblEvents" destination="tvm-ik-UVi" id="HOT-VX-3DZ"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>

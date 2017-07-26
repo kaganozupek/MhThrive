@@ -24,4 +24,14 @@ class RealmHelper: NSObject {
         let realm = try! Realm()
         return realm.objects(Event.self).sorted(byKeyPath: "start_date", ascending: false)
     }
+    
+    func createEvent(event : Event)
+    {
+        let realm = try! Realm()
+        event.id = Utils.sharedInstance.randomStringWithLength(len: 10)
+        try! realm.write {
+            realm.add(event, update : true)
+        }
+    
+    }
 }

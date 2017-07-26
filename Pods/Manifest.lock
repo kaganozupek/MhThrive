@@ -1,5 +1,6 @@
 PODS:
-  - ObjectMapper (2.2.7)
+  - DatePickerDialog (1.1.7)
+  - ObjectMapper (2.2.8)
   - Realm (2.8.3):
     - Realm/Headers (= 2.8.3)
   - Realm/Headers (2.8.3)
@@ -11,18 +12,20 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - DatePickerDialog
   - ObjectMapper (~> 2.2)
   - RealmSwift
   - SDWebImage (~> 4.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
-  ObjectMapper: 65abcfd9a61cf7396cbd14a4fb22fddfcc46577e
+  DatePickerDialog: bd5e7e92e4da2c6a8966b28d5f5d8f335d6c2c63
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
   Realm: 3601ef091c8c499a31101d8563b991e75546cdce
   RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 4c2705d89a0961b8a55f37951996ba3ef06c0190
+PODFILE CHECKSUM: a865dd6cc1e81f14064276bbea931597fc2cc7e2
 
 COCOAPODS: 1.2.0

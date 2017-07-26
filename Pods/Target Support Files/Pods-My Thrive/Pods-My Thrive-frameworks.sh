@@ -89,18 +89,20 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DatePickerDialog/DatePickerDialog.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper-iOS/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Realm-iOS/Realm.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift-iOS/RealmSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage-iOS/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Realm/Realm.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift/RealmSwift.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/DatePickerDialog/DatePickerDialog.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper-iOS/ObjectMapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Realm-iOS/Realm.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RealmSwift-iOS/RealmSwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SDWebImage-iOS/SDWebImage.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON-iOS/SwiftyJSON.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

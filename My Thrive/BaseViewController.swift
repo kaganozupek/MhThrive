@@ -93,9 +93,9 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         sideBarController = SideBarController(nibName: "SideBarController", bundle: nil);
         self.addChildViewController(sideBarController)
-        sideBarController.view.frame = sideBarContainer.frame
+        sideBarController.view.frame = CGRect(x: 0, y: 0, width: sideBarContainer.frame.size.width, height: sideBarContainer.frame.size.height)
         sideBarContainer.addSubview(sideBarController.view)
-        sideBarContainer.backgroundColor = UIColor.red
+        sideBarContainer.backgroundColor = UIColor.blue
         sideBarController.didMove(toParentViewController: self)
     }
 

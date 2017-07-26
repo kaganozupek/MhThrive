@@ -16,6 +16,8 @@ class Constants: NSObject {
     static let dimensionUpcommingCountBorder : CGFloat = 2;
     static let dimensionRatioSideBar : CGFloat = 0.75;
     static let dimensionRatioSideBarOpen : CGFloat = 0.25;
+    static let dimensionBookNowViewCornerRadius : CGFloat = 20;
+    static let dimentsionBookNowEmptyCellButtonCornerRadius : CGFloat = 10
     
     //Values
     static let valueDefaultSideBarAnimationDuration : CGFloat = 0.7
@@ -26,6 +28,7 @@ class Constants: NSObject {
     //CellIdentifiers
     static let cellIdentifierEventCell : String = "EventCellIdentifier";
     static let cellIdentifierDateCell : String = "DateCellIdentifier";
+    static let cellIdentifierEmptyCell : String = "EmptyCellIdentifier";
     
     
     
@@ -39,6 +42,7 @@ class Constants: NSObject {
     static let testVariableDummyResponseTime : Double  = 3
     static let testVariableHttpStatusCode : Int = 200
     static let tesetVariableErrorCode = apiErrorCodeSuccess
+    static let testVariableLoadFromJson : Bool = false
     
   
     //API Error Codes

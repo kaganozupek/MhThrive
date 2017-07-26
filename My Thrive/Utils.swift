@@ -16,7 +16,7 @@ class Utils: NSObject {
     func loadEventJson() -> String!
     {
         do{
-            let filePath : String = Bundle.main.path(forResource: "", ofType: "json")!
+            let filePath : String = Bundle.main.path(forResource: "bemetest", ofType: "json")!
             let data = try Data(contentsOf: URL(fileURLWithPath: filePath))
             return String(data: data, encoding: .utf8)!
         }catch
@@ -55,7 +55,7 @@ class Utils: NSObject {
         
         
         let itemResult = groupedObjects.sorted { (first: (key: Date, value: [Event]?), second: (key: Date, value: [Event]?)) -> Bool in
-            return first.key.timeIntervalSince1970 > second.key.timeIntervalSince1970
+            return first.key.timeIntervalSince1970 < second.key.timeIntervalSince1970
         }
         
         
@@ -63,7 +63,7 @@ class Utils: NSObject {
             print("key \(key)")
             result.append(key)
             for event : Event in element!{
-                print("event \(event)")
+            
                 result.append(event)
             }
             
@@ -76,7 +76,8 @@ class Utils: NSObject {
     func dateWithoutTIme(input : NSDate) -> Date
     {
         let inputDate : Date = convertNSDateToDate(input: input)
-        let unitFlags = Set<Calendar.Component>([.year, .month, .day, .timeZone])
+        let unitFlags = Set<Calendar.Component>([.year, .month, .day, .timeZone, .hour , .minute])
+        
         let compontents = NSCalendar.current.dateComponents(unitFlags, from: inputDate)
         let output : Date = NSCalendar.current.date(from: compontents)!
         return output
@@ -86,6 +87,13 @@ class Utils: NSObject {
     func convertNSDateToDate(input : NSDate) -> Date
     {
         let output = Date(timeIntervalSince1970: input.timeIntervalSince1970)
+        return output
+        
+    }
+    
+    func convertDateToNSDate(input : Date) -> NSDate
+    {
+        let output = NSDate(timeIntervalSince1970: input.timeIntervalSince1970)
         return output
         
     }
@@ -133,6 +141,23 @@ class Utils: NSObject {
         return dateString.uppercased()
     }
     
+    func getDateAsStringForForm(date : Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd MMMM,EEEE YYYY"
+        
+        let dateString = formatter.string(from: date)
+        return dateString.uppercased()
+    }
+    
+    
+    func getTimeAsStringForForm(date : Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh : mm a"
+        
+        let dateString = formatter.string(from: date)
+        return dateString.uppercased()
+    }
+    
     func getYesterdayDate(date : Date) -> Date
     {
         var dayComp = DateComponents()
@@ -144,8 +169,44 @@ class Utils: NSObject {
     func isOnIpad() -> Bool
     {
         
-        return UIDevice.current.userInterfaceIdiom == .pad
+          
+        #if os(iOS)
+            return UIDevice.current.userInterfaceIdiom == .pad
+        #else
+            return false
+        #endif
+    }
     
+    func setTimeToDate(date : Date,time : Date) -> Date
+    {
+        
+        let unitFlags = Set<Calendar.Component>([.year, .month, .day, .hour , .minute])
+        var dateCompontents = NSCalendar.current.dateComponents(unitFlags, from: date)
+        var timeCompontents = NSCalendar.current.dateComponents(unitFlags, from: time)
+        
+        dateCompontents.hour = timeCompontents.hour
+        dateCompontents.minute = timeCompontents.minute
+        
+        
+        return NSCalendar.current.date(from: dateCompontents)!
+        
+        
+        
+    }
+    
+    func randomStringWithLength (len : Int) -> NSString {
+        
+        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        
+        let randomString : NSMutableString = NSMutableString(capacity: len)
+        
+        for _ in 0 ..< len{
+            let length = UInt32 (letters.length)
+            let rand = arc4random_uniform(length)
+            randomString.appendFormat("%C", letters.character(at: Int(rand)))
+        }
+        
+        return randomString
     }
 }
 
