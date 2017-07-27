@@ -76,7 +76,7 @@ class Utils: NSObject {
     func dateWithoutTIme(input : NSDate) -> Date
     {
         let inputDate : Date = convertNSDateToDate(input: input)
-        let unitFlags = Set<Calendar.Component>([.year, .month, .day, .timeZone, .hour , .minute])
+        let unitFlags = Set<Calendar.Component>([.year, .month, .day, .timeZone])
         
         let compontents = NSCalendar.current.dateComponents(unitFlags, from: inputDate)
         let output : Date = NSCalendar.current.date(from: compontents)!
@@ -168,8 +168,6 @@ class Utils: NSObject {
     
     func isOnIpad() -> Bool
     {
-        
-          
         #if os(iOS)
             return UIDevice.current.userInterfaceIdiom == .pad
         #else
